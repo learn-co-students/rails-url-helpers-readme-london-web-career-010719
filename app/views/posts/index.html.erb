@@ -1,3 +1,9 @@
+<h1>go fuck yourself</h1>
+
+<p>
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div>
+    <%= link_to post.title, post_path(post.id) %>
+  </div>
 <% end %>
+</p>
